@@ -1,24 +1,21 @@
-# compra-personalizada
+# Compra-Personalizada
+Projeto de Teste feito em Vue.js.
 
-## Project setup
+
+Demo [clique aqui](https://cli.vuejs.org/config/).
+
+
+## Instalar o projeto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Executar para desenvolvimento com hot-reload
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilar e minificar para produção
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

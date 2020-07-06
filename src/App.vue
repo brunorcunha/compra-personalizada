@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="header">
+      <h1><img src="https://dog.ceo/img/dog-api-logo.svg" height="50" /> Loja de Doguinhos</h1>
+    </div>
+    <div id="nav">
+      <router-link to="/">Home</router-link>
+      |
+      <router-link to="/Carrinho">Carrinho ({{ cart.length }})</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { mapGetters } from 'vuex'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  computed: {
+    ...mapGetters(['cart'])
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import 'App.css';
 </style>

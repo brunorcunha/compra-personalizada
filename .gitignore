@@ -20,3 +20,10 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# logs
+package-lock.json
+
+# System Files
+Thumbs.db
+unnamed.patch
