@@ -13,7 +13,7 @@ npm install
 
 ### Executar para desenvolvimento com hot-reload
 ```
-npm run serve
+npm start
 ```
 
 ### Compilar e minificar para produção
